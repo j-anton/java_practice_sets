@@ -1,8 +1,10 @@
+package java_practice_sets;
+
 class MethodOverridingExample{
    
     public class Bank{
 
-        private float interest;
+       //private float interest;
 
         public float getRateOfInterest(float interest){
             System.out.println("Class: Bank");
@@ -22,7 +24,7 @@ class MethodOverridingExample{
 
     }
 
-    class ICI extends Bank{
+    public class ICI extends Bank{
         
         private float interest = (float) 0.08;
 
@@ -32,7 +34,7 @@ class MethodOverridingExample{
         }
     }
 
-    class AXIS extends Bank{
+    public class AXIS extends Bank{
 
         private float interest = (float) 0.09;
         
